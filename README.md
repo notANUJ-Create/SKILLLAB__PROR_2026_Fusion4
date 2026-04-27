@@ -18,26 +18,27 @@
 
 ## 1.3 Project Title
 
-`"Project Project"`
+### MediDrop
 
-`(because Project-or)`
+`A fail-proof, automated medication dispenser.`
 
 <img width="1600" height="1131" alt="image" src="https://github.com/user-attachments/assets/c64bfbd4-b3b7-43d9-83ad-c203a5aa11bc" />
 
 ## 1.4 One-Line Pitch
 
-`A projected, fully customizable time portal where engineering education is done through PUBG battlefield in the comfort of our home`
+`An interactive medication dispenser with a stubborn personality that refuses to be snoozed until you physically claim your pill.`
 
 ## 1.5 Expanded Project Idea
+  
+`This project is an automated, smart pill dispensing system designed to bridge the gap between critical healthcare needs and interactive engineering. At its core, the system utilizes a high-precision servo motor mechanism to organize and dispense medication at scheduled intervals, ensuring timely dosage without manual intervention.
 
-In 1–2 paragraphs, explain:
+What sets this system apart is its intelligent escalation mechanism. The medication reminder process is structured in multiple stages to ensure maximum reliability. Initially, an interactive voice prompt is played through the ISD1820 Voice Module, gently reminding the user to take their medicine. If the user does not respond, the system escalates to a loud buzzer alert, creating a stronger sense of urgency.
 
-- what your project is,
-- what kind of experience it creates,
-- what technologies are involved.
+If both these alerts are ignored, the system triggers a critical fail-safe response — automatically initiating an emergency call or notification to predefined contacts such as family members or healthcare providers. This ensures that in scenarios where the user is unable or unwilling to respond, external intervention can be activated promptly.
 
-**Response:**  
-`A projected and fully customizable time portal can transform engineering education into an immersive PUBG-style battlefield experience from the comfort of home. In this environment, students can learn engineering concepts by entering a virtual battlefield where challenges, obstacles, and missions are designed around real technical problems. Instead of passively studying theory, learners actively apply concepts such as electronics, coding, sensors, robotics, mechanics, and system design to complete missions, solve problems, and progress through different levels. This approach makes engineering education more interactive, engaging, and practical by combining gaming, simulation, and hands-on problem-solving in a familiar and exciting format.`
+The brain of the system is a Raspberry Pi Pico (Shrike Lite board), powered by the dual-core RP2040 microcontroller, which manages real-time decision-making and system coordination. The project integrates multiple components including a servo motor for dispensing, a voice module for interaction, a buzzer for escalation alerts, and a capacitive touch sensor for user acknowledgment.
+
+By combining embedded systems with human-centric design, this project transforms routine medication intake into a reliable, monitored, and fail-proof process, significantly reducing the risk of missed doses and improving overall healthcare compliance`
 
 ---
 
@@ -45,19 +46,13 @@ In 1–2 paragraphs, explain:
 
 ## 2.1 Experience, Not Social Problem
 
-This module does **not** require your project to solve a large social problem.
+MediDrop is designed not merely as a solution to a healthcare problem, but as an interactive and engaging system that transforms a routine task into a compelling experience. While its primary function is to dispense medicine, the project emphasizes creating a "strange but delightful" interaction that ensures user engagement.
 
-You are allowed to build:
+At its core, MediDrop behaves like a playful yet persistent machine. It combines a physical dispensing mechanism (a kinetic artifact) with custom voice prompts that actively call the user to action. If ignored, the system escalates its behavior through a loud buzzer that demands attention, requiring physical interaction via a touch sensor to acknowledge and silence it.
 
-- toys,
-- games,
-- interactive objects,
-- playful machines,
-- kinetic artifacts,
-- humorous devices,
-- strange but delightful experiences,
-- things that are entertaining to use or watch.
+However, unlike purely experimental or playful objects, MediDrop integrates a critical layer of responsibility through its escalation logic. If both the interactive voice and buzzer alerts are ignored, the system transitions from an engaging gadget into a safety-oriented device, triggering an emergency call or notification to predefined contacts such as family members or healthcare providers.
 
+This dual nature makes MediDrop unique — it operates at the intersection of playful interaction design and serious healthcare reliability. It not only entertains and engages the user but also ensures that medication adherence is enforced through intelligent, fail-safe mechanisms.
 
 
 # 3. Inspiration
@@ -68,16 +63,23 @@ List what inspired the project.
 
 | Source Type | Title / Link                                                        | What Inspired You                                                                         |
 | ----------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `[Video]`   | `https://www.instagram.com/reel/DW4CT7WCDry/?igsh=cXg3dzAxYmdncDBo` | `How projection mapping can be used to create interactive digital + physical experiences` |
-|             |                                                                     |                                                                                           |
+| [Concept/Hardware]   | `"The Useless Box" (Classic Servo Project)` | `How simple physical actuators (servos) and sensors can give a piece of hardware a stubborn, demanding "personality."` |
+| [Video/Game]     | `Tamagotchi / Digital Pets`                    |   `The concept of an electronic device that demands physical interaction and "care" on a strict schedule, escalating its alerts if ignored.`       |
 |             |                                                                     |                                                                                           |
 
 ## 3.2 Original Twist
 
-What makes your project original?
+Most smart pill dispensers are either passive containers or simple digital reminders that can be easily ignored or dismissed. MediDrop introduces a fundamentally different approach through what we call a “closed-loop physical handshake with enforced accountability.”
 
-**Response:**  
+The system does not rely on passive alerts. It actively participates in the interaction — physically dispensing medication via a servo mechanism, initiating a voice prompt through the ISD1820 module, and escalating to a persistent buzzer if ignored. Unlike conventional systems, it cannot be dismissed remotely or casually bypassed.
 
+At the core of this design is a capacitive touch sensor placed at the dispensing point, ensuring that the user must physically approach and interact with the device to acknowledge the alert. This transforms a simple reminder into a mandatory, real-world action loop — the system gives input (dispense + alert), and only accepts completion through physical confirmation.
+
+The true innovation lies in extending this loop beyond the user. If the system detects a failure to complete the interaction — even after escalation — it breaks the boundary of a standalone device and triggers an external response, such as notifying family members or healthcare providers.
+
+This means MediDrop doesn’t just remind or interact — it tracks completion, enforces engagement, and escalates responsibility when the loop is left incomplete.
+
+In essence, we have transformed a standard alarm system into a non-ignorable, intelligent interaction cycle that ensures compliance not by suggestion, but by design. 
 
 ---
 
