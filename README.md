@@ -89,11 +89,28 @@ In essence, we have transformed a standard alarm system into a non-ignorable, in
 
 Describe exactly how a user will use the project.Make it a story
 **Response:**  
+Here’s a **slightly shorter, more natural version in your tone** — like how you’d actually say it:
 
-                                                  |
+---
 
+# 4. Project Intent
 
+## 4.1 User Journey
 
+**Response:**
+
+MediDrop honestly didn’t start as a perfect idea — we were pretty confused in the beginning. We tried a lot of concepts, built some, rejected many, and wasted quite some time because nothing felt meaningful. Most ideas were either too basic or too easy to ignore.
+
+Then we changed our thinking. Instead of asking *“What can we build?”*, we asked **“What’s something we’ve actually faced?”** That’s when we realized — people often forget or ignore their medicines. Not because they don’t care, but because reminders are just too easy to dismiss. That’s how MediDrop started, and with the help of AI, we refined it into something more practical and engaging.
+
+From the user’s side, it’s simple. You’re doing your daily stuff, and at the scheduled time, MediDrop activates. It dispenses the medicine and plays a voice prompt to remind you. If you respond, done.
+
+If you ignore it, it doesn’t stop — a loud buzzer starts, forcing your attention. Now you actually have to get up, go to the device, and touch it to stop it.
+
+And if you still don’t respond, it assumes something might be wrong and sends an alert or call to your family or a healthcare contact.
+
+So it starts like a normal reminder, but slowly becomes more serious. It doesn’t just remind you — it makes sure you actually take action.
+                                      
 ---
 
 # 5. Definition of Success
@@ -107,11 +124,20 @@ Describe exactly how a user will use the project.Make it a story
 What is the smallest version of this project that still delivers the core experience?
 
 **Response:**  
+The smallest version of MediDrop that still delivers the core experience would include a basic dispensing mechanism (servo motor), a simple alert system (buzzer or voice prompt), and a touch sensor for user acknowledgment.
 
+In this version, the device would dispense the medicine at a fixed time, alert the user, and require them to physically interact with it to stop the alert. Even without advanced features like AI or remote communication, this setup already creates the main idea — a system that cannot be easily ignored and forces user engagement.
+
+This minimal version captures the core experience of MediDrop: turning a simple reminder into an action-driven interaction.
 
 ## 5.3 Stretch Features
 
 What features are nice to have but not essential?
+Right now, MediDrop works fine on its own, but there are a few things we could add to make it even better. For example, a simple mobile app so users or family members can check if medicines are taken and get alerts. We can also add Wi-Fi or GSM so it can send emergency messages on its own.
+
+We could make it smarter too — like learning the user’s habits and adjusting reminders. Other nice additions would be face recognition, battery backup for power cuts, and support for multiple medicines.
+
+These aren’t necessary for the basic working, but they show how the system can grow into something much more advanced.
 
 
 ---
@@ -128,21 +154,21 @@ Check all that apply.
 
 - [x] Sensor-based
 
-- [x] App-connected
+- [ ] App-connected
 
 - [x] Motorized
 
-- [ ] Sound-based
+- [x] Sound-based
 
-- [x] Light-based
+- [ ] Light-based
 
 - [x] Screen/UI-based
 
 - [x] Fabricated structure
 
-- [x] Game logic based
+- [ ] Game logic based
 
-- [x] Installation
+- [ ] Installation
 
 - [ ] Other:
 
@@ -159,6 +185,14 @@ Include:
 - app interaction if any.
 
 **Response:**  
+MediDrop works as a simple input–process–output system, but with a physical interaction layer.
+
+The input mainly comes from the preset medication schedule and the user’s response through the touch sensor. You can also think of time itself as an input, since the system activates at specific intervals.
+The processing is handled by the Raspberry Pi Pico, which controls everything. It checks the timing, decides when to activate the system, and manages the escalation logic — first voice, then buzzer, and finally emergency alert if there’s no response.
+The output includes multiple things happening together. The servo motor rotates to dispense the medicine, the voice module plays a reminder, and if ignored, the buzzer turns on. If the user still doesn’t respond, the system sends an alert or makes a call to a predefined contact.
+The physical structure consists of a pill container with compartments, a servo-based dispensing mechanism, and a touch sensor placed near the tray so the user has to physically interact with it.
+There isn’t a full app in the basic version, but in an extended version, a mobile app or dashboard can be added for monitoring, setting schedules, and receiving alerts remotely.
+Overall, it’s a system that takes a simple input (time + user response), processes it intelligently, and gives outputs that ensure the user actually takes action
 
 ## 6.3 Input / Output Map
 
@@ -172,16 +206,8 @@ Include:
 ## 7.1 Concept Sketch
 
 Add an early sketch of the full idea.
-
-**Insert image below:**  
-`[Upload image and link here]`
-
-Example:
-
-```md
-
-```
-
+ 
+`[img width="1600" height="1131" alt="image" src="C:\Users\user\Downloads\20260427_154201"]`
 
 
 ## 7.2 Labeled Build Sketch
