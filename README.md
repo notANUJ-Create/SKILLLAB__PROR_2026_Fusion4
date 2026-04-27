@@ -3,7 +3,7 @@
 ## Final Project README
 
 > **Project Weight:** 100%  
-> **Team Size:** 4/3 students  
+> **Team Size:** 4 students  
 > **Project Duration:** 8 hours  
 > **Total Time Available:** 32 effort-hours per team  
 > **Project Type:** Playful, interactive, technology-based experience
@@ -63,8 +63,10 @@ By the final review, this README should clearly show:
 
 | Name           | Primary Role                    | Secondary Role | Strengths Brought to the Project |
 | -------------- | ------------------------------- | -------------- | -------------------------------- |
-| `Gopalakrishnan` | `[Electronics / Coding / App ]` | `Documentation`  | `Documentation, Gift of Gab `|
-| `KAder Shaikh`  | `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
+| `Yogesh Harwani` | `[Coding]` | `Documentation / Electronics`  | `Documentation`|
+| `Dnyaneshwari Joshi`  | `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
+| `Saundarya Daware`  | `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
+| `Anuj Jakkar`  | `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
 
 ## 1.3 Project Title
 
