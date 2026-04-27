@@ -79,7 +79,7 @@ The true innovation lies in extending this loop beyond the user. If the system d
 
 This means MediDrop doesn’t just remind or interact — it tracks completion, enforces engagement, and escalates responsibility when the loop is left incomplete.
 
-In essence, we have transformed a standard alarm system into a non-ignorable, intelligent interaction cycle that ensures compliance not by suggestion, but by design. 
+In essence we have transformed a standard alarm system into a non-ignorable, intelligent interaction cycle that ensures compliance not by suggestion, but by design. 
 
 ---
 
@@ -98,24 +98,25 @@ Describe exactly how a user will use the project.Make it a story
 
 # 5. Definition of Success
 
-## 5.1 Definition of “Usable”
+## 5.1 Definition of “Usable” 
+A pill dispenser is usable if people can easily understand how to use it without confusion. It should be simple to set up, easy to operate, and comfortable for all users, especially elderly people. The buttons, alerts, and design should feel natural, so users don’t need instructions every time. Overall, it should make taking medicine easier, not more complicated.
 
 
 
 ## 5.2 Minimum Usable Version
 
 What is the smallest version of this project that still delivers the core experience?
+**5.2 Minimum Usable Version**
 
-**Response:**  
+The smallest usable version of our pill dispenser would be a simple device that can store pills, keep track of time, and remind the user when it’s time to take their medicine. At the set time, it should give a clear alert like a buzzer or recorded audiot that can allow the user to easily access the correct dose.
+
+It doesn’t need advanced features like mobile apps or multiple compartments at this stage—just the basics that ensure the user doesn’t miss their medication. As long as it reliably reminds the user and makes taking the right pill easy and stress-free, it delivers the core experience   
 
 
 ## 5.3 Stretch Features
 
 What features are nice to have but not essential?
-
-
----
-
+ 
 # 6. System Overview
 
 ## 6.1 Project Type
@@ -132,17 +133,17 @@ Check all that apply.
 
 - [x] Motorized
 
-- [ ] Sound-based
+- [x] Sound-based
 
-- [x] Light-based
+- [ ] Light-based
 
 - [x] Screen/UI-based
 
 - [x] Fabricated structure
 
-- [x] Game logic based
+- [ ] Game logic based
 
-- [x] Installation
+- [ ] Installation
 
 - [ ] Other:
 
@@ -152,9 +153,9 @@ Explain how the system works in simple terms.
 
 Include:
 
-- input,
-- processing,
-- output,
+- input-The user sets the time and schedule for their medicines using buttons. They also place the pills into the compartments.
+- processing-Inside the device, a small controller keeps track of time and compares it with the set schedule. When the time matches, it decides that it’s time to take the medicine.
+- output-The device alerts the user using a buzzer, light, or both. At the same time, it opens or points to the correct compartment so the user can take the right pills.
 - physical structure,
 - app interaction if any.
 
@@ -215,7 +216,7 @@ Add a sketch with labels showing:
 
 | Component                 | Quantity | Purpose                               |
 | ------------------------- | --------:| ------------------------------------- |
-| `[ESP32]`                 | `1`      | `[Main controller]`                   |
+| `[Raspberry pi pico]`                 | `1``[Main controller]`                   |
 | `[L298N Motor Driver]`    | `1`      | `[Control Motors]`                    |
 | `[BO Motors]`             | `2`      | `[Rotate wheels]`                     |
 | `[Buck Converter]`        | `1`      | `[Power ESP32]`                       |
