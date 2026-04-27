@@ -5,7 +5,7 @@
 
 ## 1.1 Studio / Group Name
 
-`Project^2`
+### Fusion4
 
 ## 1.2 Team Members
 
