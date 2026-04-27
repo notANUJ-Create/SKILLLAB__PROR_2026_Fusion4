@@ -11,16 +11,16 @@
 
 | Name           | Primary Role                    | Secondary Role | Strengths Brought to the Project |
 | -------------- | ------------------------------- | -------------- | -------------------------------- |
-| `Yogesh Harwani` | `[Coding]` | `Documentation / Electronics`  | `Documentation`|
-| `Dnyaneshwari Joshi`  | `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
+| `Yogesh Harwani` | `[Coding]` | `Documentation / Electronics`  | `Documentation, Material Handling`|
+| `Dnyaneshwari Joshi`  | `[Electronics]`   | `[Coding]`     | `Material Handling, Hardware`    |
 | `Saundarya Daware`  | `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
-| `Anuj Jakkar`  | `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
+| `Anuj Jakkar`  | `[Electronics]`   | `[Coding]`     | `Material Handling, Hardware`    |
 
 ## 1.3 Project Title
 
 ### MediDrop
 
-`A fail-proof, automated medication dispenser.`
+`Your personal, automated medication dispenser.`
 
 <img width="1600" height="1131" alt="image" src="https://github.com/user-attachments/assets/c64bfbd4-b3b7-43d9-83ad-c203a5aa11bc" />
 
